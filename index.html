@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Indian Cuisine
+    </title>
+</head>
+
+
+<body>
+    <link rel="stylesheet" href="ind.css">
+    <div class="header" id="myHeader">
+        <h1>Welcome to the world of food</h1>
+        <q><i>Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.</i></q>
+        <!-- <img src="https://media.giphy.com/media/XHs53Oufk6oeEeAyGP/giphy.gif" width=50px style="float: right;padding-top: 5px;"> -->
+    </div>
+    <div class="he">
+        <div class="bu">
+            <button> Contact</button>
+            <button> About me</button>
+            <button> Home</button>
+        </div>
+    </div>
+    <div class="sidenav">
+        <h4>MAHARASHTRA</h4>
+        <h4>GUJARAT</h4>
+        <h4>RAJASTHAN</h4>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+    <!--<iframe id="myFrame" src="states.html" ></iframe>-->
+    <div id="accordion"></div>
+    <div id="st"></div>
+    <script type="text/javascript" src="indistates/list_states.js"></script>
+    <script type="text/javascript" src="states_card.js"></script>
+</body>
+
+</html>

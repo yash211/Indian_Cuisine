@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="list_states.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan</title>
+</head>
+
+<body>
+    <div id="raj"></div>
+    <link rel="stylesheet" type="text/css" href="ind_states.css" />
+    <script>
+        RAJASTHAN.forEach((result) => {
+        const container = document.getElementById("raj");
+            window.scrollTo(0, 100);
+           // Construct card content
+            const content = `
+            <div class="container">
+                <img class="container_image" src="${result.simg}" style = "width:100%";"height:20%";>
+                    <div class = "container_text">
+                        <h2>${result.name}</b></h2>
+                        <p>${result.summ}</p>
+                        <a href=${result.rlink}> 
+                            <p>Click Here For Recipe</p>
+                        </a>
+                     </div>
+            </div>
+            <br></br>
+            `;
+
+            // Append newyly created card element to the container
+            container.innerHTML += content;
+        });
+    </script>
+</body>
+
+</html>
