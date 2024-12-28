@@ -4,4 +4,3 @@ Indian cuisine is a web application for foodie were they can get summary of spec
 
 Its is solely made for learning purpose,since i wnat to get a taste of how javascript works with respect to web architecture.
 
-### The application is still not complete and will add further items in future.
